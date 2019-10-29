@@ -1,5 +1,5 @@
 provider "aws" {
-    region = "us-east-1"
+    region = "us-west-2"
     profile = "default"
 }
 
@@ -10,7 +10,7 @@ module "ec2" {
   key_name= "frank"
   subnet_id= "subnet-0271f8735ed0d9284"
   vpc_security_group_ids = ["sg-02073367768e306bb"]
-  candidate = "frank" #your name
+  candidate = "frank-part-three" #your name
 
   tags = {
       Name = "case-study-test"
